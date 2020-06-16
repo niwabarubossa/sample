@@ -7,6 +7,12 @@
 //
 
 import UIKit
+import UserNotifications
+
+enum ActionIdentifier: String {
+    case actionOne
+    case actionTwo
+}
 
 class HenshuuViewController: UIViewController,UITextViewDelegate,UITextFieldDelegate {
     var isUP = false
@@ -18,6 +24,8 @@ class HenshuuViewController: UIViewController,UITextViewDelegate,UITextFieldDele
         super.viewDidLoad()
         self.textField1.delegate = self
         self.textView1.delegate = self
+        
+        self.createAndRegisterNotify()
     }
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
@@ -99,4 +107,68 @@ class HenshuuViewController: UIViewController,UITextViewDelegate,UITextFieldDele
     
 
 
+}
+
+extension HenshuuViewController:UNUserNotificationCenterDelegate{
+    private func createAndRegisterNotify(){
+        // アクション設定
+        let actionOne = UNNotificationAction(identifier: ActionIdentifier.actionOne.rawValue,
+                                            title: "アクション1",
+                                            options: [.foreground])
+        let actionTwo = UNNotificationAction(identifier: ActionIdentifier.actionTwo.rawValue,
+                                            title: "アクション2",
+                                            options: [.foreground])
+
+        let category = UNNotificationCategory(identifier: "category_select",
+                                              actions: [actionOne, actionTwo],
+                                              intentIdentifiers: [],
+                                              options: [])
+
+        UNUserNotificationCenter.current().setNotificationCategories([category])
+        UNUserNotificationCenter.current().delegate = self
+
+
+        let content = UNMutableNotificationContent()
+        content.title = "こんにちわ！"
+        content.body = "アクションを選択してください！"
+        content.sound = UNNotificationSound.default
+
+        // categoryIdentifierを設定
+        content.categoryIdentifier = "category_select"
+
+        // 60秒ごとに繰り返し通知
+        let trigger = UNTimeIntervalNotificationTrigger(timeInterval: 60, repeats: true)
+        let request = UNNotificationRequest(identifier: "notification",
+                                            content: content,
+                                            trigger: trigger)
+
+        // 通知登録
+        UNUserNotificationCenter.current().add(request, withCompletionHandler: nil)
+
+    }
+    
+    @available(iOS 10.0, *)
+    func userNotificationCenter(_ center: UNUserNotificationCenter,
+                                didReceive response: UNNotificationResponse,
+                                withCompletionHandler completionHandler: () -> Swift.Void) {
+
+        // 選択されたアクションごとに処理を分岐
+        switch response.actionIdentifier {
+
+        case ActionIdentifier.actionOne.rawValue:
+            // 具体的な処理をここに記入
+            // 変数oneをカウントアップしてラベルに表示
+            print("action one tapped!")
+
+        case ActionIdentifier.actionTwo.rawValue:
+            // 具体的な処理をここに記入
+            print("action two tapped!")
+
+        default:
+            ()
+        }
+
+        completionHandler()
+    }
+    
 }
