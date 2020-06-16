@@ -123,9 +123,9 @@ extension HenshuuViewController:UNUserNotificationCenterDelegate{
                                               actions: [actionOne, actionTwo],
                                               intentIdentifiers: [],
                                               options: [])
-
         UNUserNotificationCenter.current().setNotificationCategories([category])
         UNUserNotificationCenter.current().delegate = self
+
 
 
         let content = UNMutableNotificationContent()
@@ -157,11 +157,14 @@ extension HenshuuViewController:UNUserNotificationCenterDelegate{
 
         case ActionIdentifier.actionOne.rawValue:
             // 具体的な処理をここに記入
+            self.view.backgroundColor = UIColor.green
             // 変数oneをカウントアップしてラベルに表示
             print("action one tapped!")
 
         case ActionIdentifier.actionTwo.rawValue:
             // 具体的な処理をここに記入
+            self.view.backgroundColor = UIColor.blue
+            
             print("action two tapped!")
 
         default:
