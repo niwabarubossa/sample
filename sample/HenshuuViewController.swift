@@ -160,7 +160,9 @@ extension HenshuuViewController:UNUserNotificationCenterDelegate{
             self.view.backgroundColor = UIColor.green
             // 変数oneをカウントアップしてラベルに表示
             print("action one tapped!")
-
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let viewController2 = storyboard.instantiateViewController(withIdentifier: "SecondVC")
+            self.present(viewController2, animated: true, completion: nil)
         case ActionIdentifier.actionTwo.rawValue:
             // 具体的な処理をここに記入
             self.view.backgroundColor = UIColor.blue
