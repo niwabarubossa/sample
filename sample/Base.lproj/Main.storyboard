@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="gdq-bY-eCu">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="dBe-Ye-1db">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -57,6 +57,36 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cWg-fJ-F6q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1005.7971014492755" y="276.5625"/>
+        </scene>
+        <!--My Table View Controller-->
+        <scene sceneID="oNc-T8-TY4">
+            <objects>
+                <viewController id="dBe-Ye-1db" customClass="MyTableViewController" customModule="sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="mIS-VH-FW7">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="NT4-nY-YFB">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="NT4-nY-YFB" firstAttribute="leading" secondItem="HJp-59-ZEo" secondAttribute="leading" id="9or-dU-3JD"/>
+                            <constraint firstItem="HJp-59-ZEo" firstAttribute="trailing" secondItem="NT4-nY-YFB" secondAttribute="trailing" id="Ugv-Dm-H0k"/>
+                            <constraint firstItem="HJp-59-ZEo" firstAttribute="bottom" secondItem="NT4-nY-YFB" secondAttribute="bottom" id="bQ6-CZ-ENl"/>
+                            <constraint firstItem="NT4-nY-YFB" firstAttribute="top" secondItem="HJp-59-ZEo" secondAttribute="top" id="hDV-UA-lz8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HJp-59-ZEo"/>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="NT4-nY-YFB" id="HFT-Ct-Knj"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B7N-35-czO" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1996" y="159"/>
         </scene>
     </scenes>
 </document>
