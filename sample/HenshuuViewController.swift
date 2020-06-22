@@ -17,6 +17,8 @@ enum ActionIdentifier: String {
 class HenshuuViewController: UIViewController,UITextViewDelegate,UITextFieldDelegate {
     var isUP = false
     
+        
+    
     @IBOutlet weak var textField1: UITextField!
     @IBOutlet weak var textView1: UITextView!
     
@@ -176,4 +178,14 @@ extension HenshuuViewController:UNUserNotificationCenterDelegate{
         completionHandler()
     }
     
+}
+
+extension HenshuuViewController:UISearchControllerDelegate{
+    private func searchBarSetup(){
+        
+    }
+    
+    func didPresentSearchController(_ searchController: UISearchController) {
+        searchController.searchBar.becomeFirstResponder()
+    }
 }
