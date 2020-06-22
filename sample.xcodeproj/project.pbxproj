@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		2B3D70052499FA6A002AFA07 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3D70042499FA6A002AFA07 /* SecondViewController.swift */; };
+		2B3D70072499FEB1002AFA07 /* MukankeiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3D70062499FEB1002AFA07 /* MukankeiTableViewCell.swift */; };
 		2B5F71B2249906800072BA4A /* MyTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5F71B0249906800072BA4A /* MyTableViewCell.swift */; };
 		2B5F71B3249906800072BA4A /* MyTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2B5F71B1249906800072BA4A /* MyTableViewCell.xib */; };
 		2B5F71B5249906A50072BA4A /* MyTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B5F71B4249906A50072BA4A /* MyTableViewController.swift */; };
@@ -41,6 +42,7 @@
 
 /* Begin PBXFileReference section */
 		2B3D70042499FA6A002AFA07 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		2B3D70062499FEB1002AFA07 /* MukankeiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MukankeiTableViewCell.swift; sourceTree = "<group>"; };
 		2B5F71B0249906800072BA4A /* MyTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewCell.swift; sourceTree = "<group>"; };
 		2B5F71B1249906800072BA4A /* MyTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyTableViewCell.xib; sourceTree = "<group>"; };
 		2B5F71B4249906A50072BA4A /* MyTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyTableViewController.swift; sourceTree = "<group>"; };
@@ -121,6 +123,7 @@
 				2B5F71B1249906800072BA4A /* MyTableViewCell.xib */,
 				2B5F71B4249906A50072BA4A /* MyTableViewController.swift */,
 				2B3D70042499FA6A002AFA07 /* SecondViewController.swift */,
+				2B3D70062499FEB1002AFA07 /* MukankeiTableViewCell.swift */,
 			);
 			path = sample;
 			sourceTree = "<group>";
@@ -281,6 +284,7 @@
 				2BE614AC2496340D0051CF2A /* AppDelegate.swift in Sources */,
 				2B3D70052499FA6A002AFA07 /* SecondViewController.swift in Sources */,
 				2B5F71B2249906800072BA4A /* MyTableViewCell.swift in Sources */,
+				2B3D70072499FEB1002AFA07 /* MukankeiTableViewCell.swift in Sources */,
 				2BE614AE2496340D0051CF2A /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

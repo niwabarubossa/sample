@@ -1,18 +1,15 @@
 //
-//  MyTableViewCell.swift
+//  MukankeiTableViewCell.swift
 //  sample
 //
-//  Created by Ni Ryogo on 2020/06/16.
+//  Created by Ni Ryogo on 2020/06/17.
 //  Copyright © 2020 Ni Ryogo. All rights reserved.
 //
 
 import UIKit
 
-class MyTableViewCell: UITableViewCell {
+class MukankeiTableViewCell: UITableViewCell {
 
-    @IBOutlet weak var nextLabel: UILabel!
-    @IBOutlet weak var myLabel: UILabel!
-    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -23,5 +20,5 @@ class MyTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
+
 }

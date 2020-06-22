@@ -28,6 +28,7 @@ extension MyTableViewController:UITableViewDelegate,UITableViewDataSource{
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "MyTableViewCell") as? MyTableViewCell {
             cell.backgroundColor = UIColor.orange
+            cell.myLabel.text = "hello world"
             return cell
         }
         return MyTableViewCell()
