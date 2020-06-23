@@ -18,6 +18,7 @@ class HenshuuViewController: UIViewController,UITextViewDelegate,UITextFieldDele
     var isUP = false
     
         
+    @IBOutlet weak var mySearchBar: UISearchBar!
     
     @IBOutlet weak var textField1: UITextField!
     @IBOutlet weak var textView1: UITextView!
@@ -186,6 +187,7 @@ extension HenshuuViewController:UISearchControllerDelegate{
     }
     
     func didPresentSearchController(_ searchController: UISearchController) {
-        searchController.searchBar.becomeFirstResponder()
+        mySearchBar.becomeFirstResponder()
     }
+    
 }

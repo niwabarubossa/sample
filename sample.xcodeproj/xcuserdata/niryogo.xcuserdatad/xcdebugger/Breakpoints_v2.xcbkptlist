@@ -60,38 +60,6 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "108"
             endingLineNumber = "108">
-            <Locations>
-               <Location
-                  uuid = "F1C391FC-3690-4DE6-AB38-8779B5A4A827 - 4ad3c1faccedc37f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in static sample.MdbViewModel.fetchArticle(completion: (Swift.Array&lt;sample.MdbStruct&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "sample"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/niryogo/Desktop/sample/sample/MyTableViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "109"
-                  endingLineNumber = "109"
-                  offsetFromSymbolStart = "2529">
-               </Location>
-               <Location
-                  uuid = "F1C391FC-3690-4DE6-AB38-8779B5A4A827 - 4ad3c1faccedc37f"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 (Swift.Optional&lt;Foundation.Data&gt;, Swift.Optional&lt;__C.NSURLResponse&gt;, Swift.Optional&lt;Swift.Error&gt;) -&gt; () in static sample.MdbViewModel.fetchArticle(completion: (Swift.Array&lt;sample.MdbStruct&gt;) -&gt; ()) -&gt; ()"
-                  moduleName = "sample"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/niryogo/Desktop/sample/sample/MyTableViewController.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "109"
-                  endingLineNumber = "109"
-                  offsetFromSymbolStart = "2690">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
