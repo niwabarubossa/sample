@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B04AFFC24AEC269006032F0 /* ScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B04AFFB24AEC269006032F0 /* ScrollViewController.swift */; };
 		2B2BFBD924A1FBBF002771A1 /* NavTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2BFBD824A1FBBF002771A1 /* NavTableViewController.swift */; };
 		2B2BFBDB24A221C8002771A1 /* NewNavTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B2BFBDA24A221C8002771A1 /* NewNavTableViewController.swift */; };
 		2B3D70052499FA6A002AFA07 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B3D70042499FA6A002AFA07 /* SecondViewController.swift */; };
@@ -43,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2B04AFFB24AEC269006032F0 /* ScrollViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollViewController.swift; sourceTree = "<group>"; };
 		2B2BFBD824A1FBBF002771A1 /* NavTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavTableViewController.swift; sourceTree = "<group>"; };
 		2B2BFBDA24A221C8002771A1 /* NewNavTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewNavTableViewController.swift; sourceTree = "<group>"; };
 		2B3D70042499FA6A002AFA07 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
@@ -130,6 +132,7 @@
 				2B3D70062499FEB1002AFA07 /* MukankeiTableViewCell.swift */,
 				2B2BFBD824A1FBBF002771A1 /* NavTableViewController.swift */,
 				2B2BFBDA24A221C8002771A1 /* NewNavTableViewController.swift */,
+				2B04AFFB24AEC269006032F0 /* ScrollViewController.swift */,
 			);
 			path = sample;
 			sourceTree = "<group>";
@@ -291,6 +294,7 @@
 				2B2BFBDB24A221C8002771A1 /* NewNavTableViewController.swift in Sources */,
 				2B3D70052499FA6A002AFA07 /* SecondViewController.swift in Sources */,
 				2B5F71B2249906800072BA4A /* MyTableViewCell.swift in Sources */,
+				2B04AFFC24AEC269006032F0 /* ScrollViewController.swift in Sources */,
 				2B2BFBD924A1FBBF002771A1 /* NavTableViewController.swift in Sources */,
 				2B3D70072499FEB1002AFA07 /* MukankeiTableViewCell.swift in Sources */,
 				2BE614AE2496340D0051CF2A /* SceneDelegate.swift in Sources */,
