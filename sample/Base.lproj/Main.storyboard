@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="oLA-lk-Ufb">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="VGn-0y-2FI">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -194,6 +194,44 @@
                 </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1786.9565217391305" y="1040.625"/>
+        </scene>
+        <!--My Scroll View Controller-->
+        <scene sceneID="PlX-yc-Ib9">
+            <objects>
+                <viewController id="VGn-0y-2FI" customClass="MyScrollViewController" customModule="sample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="01g-OE-vel">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" alwaysBounceHorizontal="YES" translatesAutoresizingMaskIntoConstraints="NO" id="zYH-ay-vT4">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <gestureRecognizers/>
+                                <viewLayoutGuide key="contentLayoutGuide" id="lPr-h3-Ko8"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="yQw-RZ-WXR"/>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="nvy-8v-TSL" appends="YES" id="xuf-9p-cle"/>
+                                </connections>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="zYH-ay-vT4" firstAttribute="height" secondItem="01g-OE-vel" secondAttribute="height" multiplier="0.912946" id="Q68-EW-77b"/>
+                            <constraint firstItem="zYH-ay-vT4" firstAttribute="width" secondItem="01g-OE-vel" secondAttribute="width" id="orc-sP-TPo"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HND-ru-cZd"/>
+                    </view>
+                    <connections>
+                        <outlet property="scrollView" destination="zYH-ay-vT4" id="QpD-7h-FuT"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eTP-K5-GSb" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer numberOfTapsRequired="2" id="nvy-8v-TSL">
+                    <connections>
+                        <action selector="doubleTapped:" destination="VGn-0y-2FI" id="RUE-er-yFR"/>
+                    </connections>
+                </tapGestureRecognizer>
+            </objects>
+            <point key="canvasLocation" x="3549.275362318841" y="966.96428571428567"/>
         </scene>
         <!--My Table View Controller-->
         <scene sceneID="oNc-T8-TY4">
